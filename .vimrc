@@ -139,11 +139,13 @@ map <C-f> /
 vnoremap <Tab> >
 vnoremap <S-Tab> <
 " comment / decomment & normal comment behavior
-vmap <C-m> gc
+vmap // gc
+" vmap <C-_> gc
+
 " Disable tComment to escape some entities
 let g:tcomment#replacements_xml={}
 " Text wrap simpler, then type the open tag or ',"
-vmap <C-w> S
+" vmap <C-_> S
 " Cut, Paste, Copy
 vmap <C-x> d
 vmap <C-v> p
