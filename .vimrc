@@ -105,6 +105,14 @@ inoremap <C-c> <Esc>
 
 set completeopt=menuone,longest,preview
 
+
+" copy to buffer
+vmap <C-c> :w! ~/.vimbuffer<CR>
+nmap <C-c> :.w! ~/.vimbuffer<CR>
+" paste from buffer
+map <C-p> :r ~/.vimbuffer<CR>
+
+
 "
 " Plugins config
 "
@@ -147,9 +155,11 @@ let g:tcomment#replacements_xml={}
 " Text wrap simpler, then type the open tag or ',"
 " vmap <C-_> S
 " Cut, Paste, Copy
-vmap <C-x> d
-vmap <C-v> p
-vmap <C-c> y
+
+" vmap <C-x> d
+" vmap <C-v> p
+" vmap <C-c> y
+
 " Undo, Redo (broken)
 " nnoremap <C-z>  :undo<CR>
 " inoremap <C-z>  <Esc>:undo<CR>
